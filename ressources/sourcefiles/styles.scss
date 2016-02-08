@@ -1,0 +1,74 @@
+
+// VARIABLES
+
+$primary-color: #ff6100;
+$background-color: #fafafa;
+
+$text-color-primary: #333;
+$text-color-faded: #777;
+
+$quarter-black: rgba(0,0,0,.25);
+
+$primary-text-font: "Open Sans", sans-serif;
+
+
+// MAIN
+
+body {
+	background-color: $background-color;
+}
+
+// TAB BUTTONS
+
+.tabFrame {
+	display: flex;
+	background-color: $primary-color;
+	box-shadow: 1px 0 2px 2px $quarter-black;
+
+	&__button {
+		width: 33.33%;
+		text-align: center;
+		font-size: 1.2rem;
+		color: rgba(0,0,0,.75);
+		padding-top: .5em;
+		padding-bottom: .3em;
+		border-bottom: .2em solid $primary-color;
+		transition: color .5s;
+
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}
+
+		&.active {
+			// The button displays differently to signify that the tab is being viewed
+			color: white;
+			border-bottom-color: white; 
+		}
+
+		&__icon {
+		}
+
+		&__label {
+			display: none;
+		}
+
+	}
+
+}
+
+
+// FONT SIZES
+
+@media only screen and (min-device-width: 480px) { html { font-size : 24px; } }
+
+
+// UTILITIES
+
+.text-center {
+	text-align: center;
+}
+
+[onclick]:hover {
+	cursor: pointer;
+}
