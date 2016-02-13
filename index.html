@@ -9,8 +9,6 @@
 	
 	<title>Élan Démocrate</title>
 
-
-
 </head>
 
 
@@ -21,6 +19,17 @@
 a { color: inherit; }
 
 </style>
+
+<div class="topFrame">
+	<h1 class="topFrame__brand">
+		<i class="fa fa-chevron-right"></i>
+		<strong>Élan Démocrate</strong>
+	</h1>
+	<a href="#search" class="topFrame__icon">
+		<i class="fa fa-search"></i></a>
+	<a href="#menu" class="topFrame__icon">
+		<i class="fa fa-ellipsis-v"></i></a>
+</div>
 
 <div class="tabFrame">
 
@@ -106,6 +115,20 @@ $( document ).ready(function() {
 <script src="ressources/third-party/jquery-2.2.0.min.js"></script>
 
 <script src="ressources/prodfiles/main.min.js"></script>
+
+<style>
+
+html { font-family: "Open Sans"; }
+
+strong { font-weight: bold; }
+
+.topFrame { background-color: #ff6100; color: white; padding: 1rem; text-align: right; font-size: 1.2em; }
+.topFrame__brand { display: inline; text-transform: uppercase; text-decoration: none; float: left; }
+.topFrame__icon { margin: 0 .5em; }
+
+.tabFrame { box-shadow: 1px 4px 2px -3px rgba(0,0,0,.25); }
+
+</style>
 
 
 </html>
